@@ -1,2 +1,2 @@
 # landinpage-estudo
-Estudo-pratico 
+Projeto em andamento 
