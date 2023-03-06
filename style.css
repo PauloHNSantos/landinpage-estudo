@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Geostar&family=Montserrat&family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body{
+    background-color: #000;
+}
+
+.containerCabeçario{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 3rem;
+    width: 100%;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+
+}
+
+.logo img{
+    width: 2.5rem;
+    height: auto;
+
+}
+
+.logo h1{
+    color: #fff;
+    font-size: 1.55rem;
+    font-weight: 700;
+    margin-left: 0.8rem;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .search-container input[type=text] {
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+  }
+  
+  .search-container button {
+    border: none;
+    outline: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  .search-container button:hover {
+    background-color: #3e8e41;
+  }
+  
+
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+}
+
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+ul li a:hover{
+    color: #5bacbf;
+}
+
+.btn{
+    background-color: #5bacbf;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.5rem;
+}
+
+.btn:hover{
+    background-color: #2889c2;
+}
+
+.interno{
+    display: flex;
+    max-width: 100%;
+    margin-top: 5rem;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.interno-direita img{
+    max-width: 100%;
+    width: 43.75rem;
+    height: auto;
+    margin-left: 0;
+}
+
+.interno-esquerda{
+    max-width: 100%;
+}
+
+.title h2{
+    font-size: 3.125rem;
+    color:#ccc;
+}
+
+.interno-esquerda p{
+    line-height: 2.5rem;
+    color: #fff;
+}
+
+button{
+   color: #fff;
+    background-color: #5bacbf;
+    padding: 0.9rem 1.3rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+button:hover{
+    color: #fff;
+    background-color: #2889c2;
+}
+
+aside{
+    display: none;
+}
+
+footer {
+    background-color: #f7f7f7;
+    padding: 40px 0;
+  }
+  
+  footer h4 {
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  footer p {
+    color: #666;
+    font-size: 14px;
+    line-height: 1.5;
+  }
+  
+  footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  footer ul li {
+    margin-bottom: 10px;
+  }
+  
+  footer ul li a {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    footer .container {
+      padding: 0;
+    }
+    
+    footer .row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    
+    footer .col-sm-6 {
+      margin-bottom: 30px;
+    }
+  }
+  
+
+@media screen and (max-width:740px){
+    ul{
+        display: none;
+    }
+
+    .links{
+        display: block;
+    }
+    .logo{
+        margin-right: 15rem;
+    }
+
+    aside{
+        position: absolute;
+        top: 0;
+        right: 0;
+        display: flex;
+        overflow: hidden;
+    }
+
+    #barraMenu{
+        background-color: #2889c2;
+        width: 18.75rem;
+        height: 110vh;
+        transition: 0.3s all;
+    }
+
+    .iconMenu ion-icon{
+        width: 2.813rem;
+        height: 2.813rem;
+        margin-right: 1.5rem;
+        margin-top: 2rem;
+        color: #fff;
+    }
+
+    #barraMenu ul{
+        align-items: center;
+        text-align: center;
+        padding: 5rem;
+        line-height: 5rem;
+    }
+
+    #barraMenu ul li a{
+        color: #011927;
+        text-decoration: none;
+        font-size: 1rem;
+        width: 100%;
+    }
+
+    #barraMenu ul li a:hover{
+        background-color: #91DC18;
+        padding: 0.9rem 1.3rem;
+        border-radius: 0.5rem;
+
+    }
+
+
+    .C-icon{
+        margin-top: 50%;
+        display: flex;
+        justify-content: center;
+        gap: 0.938rem;
+        overflow: hidden;
+    }
+
+    .C-icon span{
+        color: #fff;
+        font-size: 1rem;
+    }
+}
+
+    .C-icon-cont{
+        gap: 1.5rem;
+        overflow: hidden;
+        cursor: pointer;
+        
+    }
+
+    .icon-cont{
+        padding: 1rem 3.7rem;
+    }
+
+    .icon-cont:hover{
+        background-color: #91DC18;
+    }
+
+
+
+@media screen and (max-width:580px){
+    .title h2{
+        font-size: 2.2rem;
+        margin-left: 1.5rem;
+    }
+
+    .interno-esquerda p{
+        font-size: 1rem;
+        margin-left: 1.5rem;
+        width: 28.125;
+    }
+
+    button{
+        margin-left: 1.5rem;
+    }
+
+    .interno-direita{
+        max-width: 100%;
+        width: 28.125;
+        margin-top: 4.5rem;
+        height: auto;
+    }
+
+}
+
+
+@media screen and (max-width:445px){
+   
+
+    .interno-esquerda p{
+        font-size: 1rem;
+        margin-left: 1.5rem;
+        width: 18.75;
+    }
+
+    .interno-direita img{
+        margin-left: 1.2rem;
+    }
+
+}
