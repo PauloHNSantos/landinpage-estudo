@@ -4,33 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <link rel="stylesheet" href="./style.css">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./stylet.css">
     <title>Rubi</title>
 </head>
 <body>
     <main>
         <!--logo-->
-        <header class="containerCabeçario">
-         <div class="logo">
-            <img src="./editadas_img/logo_rubi.png" alt="logo">
-            <h1>Rubi</h1>
-            <!--topo-->
-
-            <div class="search-container">
-                <input type="text" placeholder="Pesquisar...">
-                <button id="search-button">Buscar</button>
-              </div>
+        <header class="flex justify-around items-center mt-12 w-full">
+            <div class="flex items-center max-h-14">
+                <div class="w-5 h-auto">
+                  <img src="./editadas_img/logo_rubi.png" alt="logo">  
+                </div>
+                
+                <h1 class="text-2xl text-white ml-1.5">Rubi</h1>
+                <!--topo-->
+                 
+                <div class="border border-green-300 rounded-xl flex items-center ml-7">
+                    <div class="p-2">
+                        <input type="text" placeholder="Pesquisar..." class="bg-transparent text-white">
+                        
+                            <button class=" bg-green-300 hover:bg-green-600 hover:text-white px-4 py-1 mt-0 mb-0.5  rounded shadow ">
+                                <a href="" id="search-btn">Buscar</a>
+                            </button>
+                    </div>
+                </div>
+            </div>
               
-
-         </div>   
-            <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="#">Preços</a></li>
-                <li><a href="#">Rede Social</a></li>
-                <li><a href="#">Produto</a></li>
-                <li><a href="#" class="btn">Sing up</a></li>
+            <ul class="flex list-none gap-20">
+                <li class=" hover:text-green-300"><a href="#">Inicio</a></li>
+                <li class=" hover:text-green-300"><a href="#">Preços</a></li>
+                <li class=" hover:text-green-300"><a href="#">Rede Social</a></li>
+                <li class=" hover:text-green-300"><a href="#">Produto</a></li>
+               
             </ul>
+            <button class="bg-green-300 hover:bg-green-600 hover:text-white px-4 py-1 mt-0 mb-0.5  rounded shadow ">
+                <a href=""> Sing up</a>
+            </button>
         </header>
         <aside>
             <!-- Menu responsivo-->
