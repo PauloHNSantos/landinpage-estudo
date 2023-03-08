@@ -6,10 +6,17 @@ function abrirMenu() {
     } else{
         BarraMenuAberto.style.width = "0px";
     }
-}
+} 
 
-document.getElementById("search-button").addEventListener("click", function() {
-    var searchTerm = document.querySelector(".search-container input[type=text]").value;
-    alert("Você buscou por: " + searchTerm);
-  });
-  
+const searchBtn = document.getElementById('search-btn');
+
+searchBtn.addEventListener('click', function() {
+  const searchText = document.querySelector('input[type="text"]').value.toLowerCase();
+  const pageContent = document.body.innerHTML.toLowerCase();
+
+  if (pageContent.indexOf(searchText) !== -1) {
+    alert(`O texto "${searchText}" foi encontrado na página!`);
+  } else {
+    alert(`O texto "${searchText}" não foi encontrado na página.`);
+  }
+});
